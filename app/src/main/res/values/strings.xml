@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">SuperHeroes</string>
+    <string name="titleText">Superheroes</string>
+    <string name="btSend">Send</string>
+    <string name="helpText">Write a Hero name</string>
+    <string name="notification">you have sent %s</string>
+</resources>
