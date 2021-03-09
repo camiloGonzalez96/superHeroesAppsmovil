@@ -19,16 +19,5 @@ class MainActivity : AppCompatActivity() {
 
         viewBinding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(viewBinding.root)
-        //setContentView(R.layout.activity_main)
-
-        //var NombreHeroe = findViewById<EditText>(R.id.etNombreHeroe)
-        //var boton = findViewById<Button>(R.id.btSend)
-
-        viewBinding.btSend.setOnClickListener {
-            //Toast.makeText(this, "enviaste tu heroe + $Personaje", Toast.LENGTH_LONG).show()
-            var personaje:String = getString(R.string.notification, viewBinding.etNombreHeroe.text.toString())
-
-            Snackbar.make(it,personaje, Snackbar.LENGTH_LONG).setAnchorView(R.id.btSend).show()
-        }
     }
 }

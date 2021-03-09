@@ -2,4 +2,5 @@
 <resources>
     <dimen name="marginTitle">24dp</dimen>
     <dimen name="titleSize">24dp</dimen>
+    <dimen name="photoSize">120dp</dimen>
 </resources>
