@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--JUAN CAMILO GONZALEZ BERRIO
+COD: 1735277-2711
+-->
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".VerDatosActivity">
+
+    <ImageView
+        android:id="@+id/sentPhoto"
+        android:layout_width="@dimen/photoSize"
+        android:layout_height="@dimen/photoSize"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="76dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/tvSentName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:textColor="@color/design_default_color_primary_dark"
+        android:textSize="@dimen/marginTitle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.428"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sentPhoto"
+        tools:text="texto default xd" />
+
+    <RatingBar
+        android:id="@+id/ratingBar"
+        android:progressTint="@color/powerGolden"
+        android:isIndicator="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.432"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvSentName" />
+</androidx.constraintlayout.widget.ConstraintLayout>
